@@ -34,8 +34,7 @@ while True:
     if success:
         break
 
-key_materials = dict(sorted(key_materials.items(), key=lambda x: x[0]))
-key_materials = dict(sorted(key_materials.items(), key=lambda x: -x[1]))
+key_materials = dict(sorted(key_materials.items(), key=lambda x: (-x[1], x[0])))
 junk_materials = dict(sorted(junk_materials.items(), key=lambda x: x[0]))
 for k, v in key_materials.items():
     print(f"{k}: {v}")
