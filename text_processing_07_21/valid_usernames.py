@@ -9,4 +9,10 @@ for word in line:
         if is_valid:
             print(word)
 
-
+# With Regex
+# import re
+# line = input()
+# pattern = r'(^|(?<=, ))[\w-]{3,16}($|(?=,))'
+# result = re.finditer(pattern, line)
+# for el in result:
+#     print(el.group())
